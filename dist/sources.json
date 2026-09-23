@@ -1,0 +1,62 @@
+[
+  {
+    "id": "responses",
+    "title": "Text generation / Responses API",
+    "url": "https://developers.openai.com/api/docs/guides/text",
+    "supports": "Server-side model requests, input messages and text output."
+  },
+  {
+    "id": "tools",
+    "title": "Function calling",
+    "url": "https://developers.openai.com/api/docs/guides/function-calling",
+    "supports": "Model-selected function calls and application-executed tool results."
+  },
+  {
+    "id": "structure",
+    "title": "Structured outputs",
+    "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+    "supports": "Schema-constrained output; refusals and incomplete results still need handling."
+  },
+  {
+    "id": "state",
+    "title": "Conversation state",
+    "url": "https://developers.openai.com/api/docs/guides/conversation-state",
+    "supports": "Explicit history, response chaining and conversation resources."
+  },
+  {
+    "id": "agents",
+    "title": "Agent runtime options",
+    "url": "https://developers.openai.com/api/docs/guides/agents",
+    "supports": "Differences between Agents API, Agents SDK and Responses API."
+  },
+  {
+    "id": "instructions",
+    "title": "Custom instructions with AGENTS.md",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+    "supports": "Codex instruction discovery and directory-level overrides."
+  },
+  {
+    "id": "mcp",
+    "title": "OpenAI Docs MCP",
+    "url": "https://developers.openai.com/learn/docs-mcp",
+    "supports": "Read-only public documentation MCP endpoint and agent configuration."
+  },
+  {
+    "id": "plugins",
+    "title": "ChatGPT plugins documentation",
+    "url": "https://developers.openai.com/plugins",
+    "supports": "Skills, MCP servers, optional UI and plugin packaging. The former Apps SDK URL redirected here during review."
+  },
+  {
+    "id": "production",
+    "title": "Production best practices",
+    "url": "https://developers.openai.com/api/docs/guides/production-best-practices",
+    "supports": "Secret management, access boundaries and operational preparation."
+  },
+  {
+    "id": "evals",
+    "title": "Evaluation best practices",
+    "url": "https://developers.openai.com/api/docs/guides/evaluation-best-practices",
+    "supports": "Task-specific evaluation and continuous quality measurement."
+  }
+]

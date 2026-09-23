@@ -1,0 +1,19 @@
+name: Validate publication
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python scripts/build.py
+      - run: python scripts/package.py
+      - run: python scripts/check.py
+      - run: node --test scripts/export.test.mjs templates/responses/server.test.mjs templates/codex/site.test.mjs
