@@ -1,6 +1,6 @@
 # OpenAI from Docs
 
-An independent public-documentation-based field guide to generative AI, ChatGPT, Codex and the OpenAI API. Includes a four-lesson, XP-tracked GenAI 101 journey with earned badges, 3D card effects and four selectable color palettes; ten engineering chapters, three interactive labs, two downloadable repository starters and an engineering study of Claude Code from Source.
+An independent public-documentation-based field guide to generative AI, ChatGPT, Codex and the OpenAI API. Includes a four-lesson, XP-tracked GenAI 101 journey with earned badges, 12 offline simulated chats, 3D card effects and four selectable color palettes; ten engineering chapters, three interactive labs, two downloadable repository starters and an engineering study of Claude Code from Source.
 
 ## Run and verify
 
@@ -22,6 +22,7 @@ Open http://127.0.0.1:4173. Chapter content is pre-rendered; search, persistent 
 ```text
 content.json                 Canonical original content + official sources
 modules/introduction.json    Four beginner-to-practitioner lessons + public sources
+modules/simulations.json     Twelve offline, authored prompt-and-reply exercises
 book/                        Generated Markdown chapters
 dist/                        Static website, client scripts and downloads
 research/study.html          Source-based reference engineering study

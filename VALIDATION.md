@@ -7,6 +7,7 @@ Verified locally on 2026-09-24.
 - Ten Node tests passed: archive path safety, archive directory offsets, template completeness, static starter metadata/assets, Responses output extraction, missing configuration, cross-origin rejection, input validation, request contract and sanitized upstream errors.
 - Browser checks on the prior release covered search/filter, denied tool actions, context budget arithmetic, release checklist, repository ZIP creation and desktop/narrow-screen layouts. This update was validated with static checks and generated-page link checks; the new module did not receive a separate visual browser inspection.
 - GenAI journey checks verify four quest stages, one completion control per lesson, local progress/XP and badge wiring, four palette choices, and reduced-motion styling for the depth effects. These are static source checks; browser-storage persistence and visual behavior were not manually exercised in this validation pass.
+- Offline chat checks verify three prompt/reply examples per journey topic, editable prompt fields, explicit preset-response disclosure, and local reveal controls. No remote request path is used by these demos.
 
 ## Limits
 

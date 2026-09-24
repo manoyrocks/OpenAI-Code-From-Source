@@ -35,6 +35,14 @@ document.querySelectorAll('.copy').forEach(button => button.addEventListener('cl
     button.textContent = 'Copied';
   } catch { button.textContent = 'Select the example to copy'; }
 }));
+document.querySelectorAll('[data-run-sim]').forEach(button => button.addEventListener('click', () => {
+  const card = button.closest('.sim-card');
+  const result = card.querySelector('[data-sim-result]');
+  result.hidden = false;
+  result.dataset.open = 'true';
+  button.textContent = 'Show sample reply again';
+  card.classList.add('sim-active');
+}));
 
 const search = document.getElementById('search');
 if (search) {

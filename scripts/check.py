@@ -19,6 +19,7 @@ for path in pages:
         assert (path.parent/url.path).is_file(),f'Broken local reference: {path.name} -> {ref}'
 data=json.loads((ROOT/'content.json').read_text(encoding='utf8'))
 module=json.loads((ROOT/'modules'/'introduction.json').read_text(encoding='utf8'))
+simulations=json.loads((ROOT/'modules'/'simulations.json').read_text(encoding='utf8'))
 data['chapters']=module['chapters']+data['chapters']
 data['sources']+=module['sources']
 source_ids={s['id'] for s in data['sources']}
@@ -40,12 +41,18 @@ with zipfile.ZipFile(ROOT/'dist'/'downloads'/'openai-from-docs.zip') as archive:
     assert archive.testzip() is None
     assert not any('/.openai/' in n or '/.git/' in n for n in archive.namelist())
 assert len(pages)==len(data['chapters'])+7
+assert set(simulations)=={c['slug'] for c in module['chapters']}
+assert all(len(items)==3 and all(item.get('title') and item.get('prompt') and item.get('reply') for item in items) for items in simulations.values())
 landing=(ROOT/'dist'/'introduction.html').read_text(encoding='utf8')
 app=(ROOT/'dist'/'app.js').read_text(encoding='utf8')
 theme_css=(ROOT/'dist'/'journey.css').read_text(encoding='utf8')
 assert landing.count('class="quest-node"')==4
 assert landing.count('data-complete-step')==0  # completion controls live on lesson pages
 assert all((ROOT/'dist'/(c['slug']+'.html')).read_text(encoding='utf8').count('data-complete-step')==1 for c in module['chapters'])
+for slug in simulations:
+    lesson=(ROOT/'dist'/(slug+'.html')).read_text(encoding='utf8')
+    assert lesson.count('data-run-sim')==3 and lesson.count('data-sim-prompt')==3 and lesson.count('data-sim-result')==3
+    assert 'work offline' in lesson.lower() and 'does not generate a new response' in lesson.lower()
 assert all(f'value="{palette}"' in landing for palette in ['ocean','violet','ember','forest'])
 assert 'ofd-genai-101-progress' in app and '100 XP' in app and 'badgeNames' in app and "id=\"palette\"" in landing
 assert '@media(prefers-reduced-motion:reduce)' in theme_css and 'perspective:' in theme_css
