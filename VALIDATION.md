@@ -14,6 +14,6 @@ No live OpenAI request was made. Responses tests use an injected mock upstream. 
 
 The original Claude application was source-reviewed, not executed or benchmarked. Its research provenance and reported production process are attributed to its authors.
 
-The guide runs locally. A private Site was registered, but deployment could not complete because the installed Sites publishing helper disappeared during the session. No hosted deployment success is claimed. The local Git repository and downloadable source include a separate manual GitHub Pages workflow; a GitHub remote has not been created.
+The private Sites deployment succeeded at https://openai-from-docs-fieldguide.randy-cabredo740150.chatgpt.site. The deployed source commit is `d899ef4dd467b93031d4ce4f1b33d804058d13c0`. The local repository and downloadable source include a separate manual GitHub Pages workflow; a GitHub remote has not been created.
 
 The exported Responses application is a loopback-only development starter. Authentication, quotas, deployment operations and live integration acceptance remain required for public production use. The exporter produces a deterministic starter and brief, not arbitrary finished custom applications.
