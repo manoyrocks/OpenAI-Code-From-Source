@@ -1,6 +1,6 @@
 # OpenAI from Docs
 
-An independent public-documentation-based field guide to ChatGPT, Codex and the OpenAI API. Includes ten source-linked chapters, three interactive labs, two downloadable repository starters and an engineering study of Claude Code from Source.
+An independent public-documentation-based field guide to generative AI, ChatGPT, Codex and the OpenAI API. Includes a four-lesson GenAI 101 introduction, ten engineering chapters, three interactive labs, two downloadable repository starters and an engineering study of Claude Code from Source.
 
 ## Run and verify
 
@@ -21,6 +21,7 @@ Open http://127.0.0.1:4173. Chapter content is pre-rendered; search, theme, labs
 
 ```text
 content.json                 Canonical original content + official sources
+modules/introduction.json    Four beginner-to-practitioner lessons + public sources
 book/                        Generated Markdown chapters
 dist/                        Static website, client scripts and downloads
 research/study.html          Source-based reference engineering study
@@ -32,7 +33,7 @@ scripts/                     Build, packaging and content checks
 .github/workflows/           Checks and manual GitHub Pages publication
 ```
 
-Edit content.json then rebuild. Edit shared presentation in scripts/build.py and dist/style.css. dist is deliberately tracked for buildless static hosting. scripts/package.py generates shared template instructions and the downloadable source bundle. Run packaging after edits so exports match their source.
+Edit content.json or modules/introduction.json then rebuild. Edit shared presentation in scripts/build.py and dist/style.css. dist is deliberately tracked for buildless static hosting. scripts/package.py generates shared template instructions and the downloadable source bundle. Run packaging after edits so exports match their source.
 
 ## Hosting
 
@@ -46,4 +47,4 @@ The Responses starter has a real server-side Responses integration, tested with 
 
 ## Provenance
 
-Sources reviewed 2026-09-23. Read the source ledger and reference study before reusing claims. The reference repository was inspected at a6d5e452a8e0dd925c22c407c84611b1994562eb; its authors say their content came from source maps, not solely public documentation. This project copies none of that project's prose, code or imagery. Vendor marks identify technologies; there is no affiliation or endorsement.
+Sources reviewed 2026-09-24. The introduction combines public resources from Microsoft, Google Cloud, NIST, Anthropic, Metropolitan State University of Denver and OpenAI. Read the source ledger and reference study before reusing claims. The reference repository was inspected at a6d5e452a8e0dd925c22c407c84611b1994562eb; its authors say their content came from source maps, not solely public documentation. This project copies none of that project's prose, code or imagery. Vendor marks identify technologies; there is no affiliation or endorsement.

@@ -96,7 +96,7 @@ Some repository guidance is stale. CLAUDE.md still describes the web app as futu
 ## The OpenAI adaptation
 
 
-OpenAI from Docs keeps the content-to-publication model but changes the evidence basis. Its ten chapters explain documented product boundaries, repository instructions, Responses requests, function calls, state, structured outputs, ChatGPT integrations, evaluation and release engineering. Every chapter links its primary sources. The explanations and examples are original.
+OpenAI from Docs keeps the content-to-publication model but changes the evidence basis. Its four-lesson GenAI 101 path serves beginners and AI practitioners with public sources from Microsoft, Google Cloud, NIST, Anthropic, a university and OpenAI. Ten engineering chapters explain documented product boundaries, repository instructions, Responses requests, function calls, state, structured outputs, ChatGPT integrations, evaluation and release engineering. Every lesson and chapter links its sources. The explanations and examples are original.
 
 
 The frontend is pre-rendered HTML with small JavaScript enhancements. A dependency-free Python publisher creates chapter pages and Markdown from a canonical content catalog. This is an intentional simplification for a compact guide: readers do not need a client framework to see the content. React or Astro remains a reasonable future choice if the editorial system grows; this implementation does not claim to reproduce the reference’s stack.

@@ -2,7 +2,7 @@
 
 Make a server-side Responses request with a bounded failure path.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## The smallest useful vertical slice
 

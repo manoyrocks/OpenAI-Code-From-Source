@@ -2,7 +2,7 @@
 
 Turn the repository into a repeatable delivery process.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## Ship a bounded system
 

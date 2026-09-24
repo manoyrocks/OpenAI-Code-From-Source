@@ -18,8 +18,12 @@ for path in pages:
         if url.scheme or url.netloc or not url.path:continue
         assert (path.parent/url.path).is_file(),f'Broken local reference: {path.name} -> {ref}'
 data=json.loads((ROOT/'content.json').read_text(encoding='utf8'))
+module=json.loads((ROOT/'modules'/'introduction.json').read_text(encoding='utf8'))
+data['chapters']=module['chapters']+data['chapters']
+data['sources']+=module['sources']
 source_ids={s['id'] for s in data['sources']}
 assert len(source_ids)==len(data['sources'])
+assert all(s.get('title') and s.get('url','').startswith('https://') for s in data['sources'])
 assert len({c['slug'] for c in data['chapters']})==len(data['chapters'])
 for c in data['chapters']:
     assert c['sources'] and set(c['sources'])<=source_ids
@@ -35,4 +39,5 @@ for name,files in catalog.items():
 with zipfile.ZipFile(ROOT/'dist'/'downloads'/'openai-from-docs.zip') as archive:
     assert archive.testzip() is None
     assert not any('/.openai/' in n or '/.git/' in n for n in archive.namelist())
+assert len(pages)==len(data['chapters'])+7
 print(f'PASS: {len(pages)} pages, local references, chapter provenance, 2 template catalogs and portable ZIP.')

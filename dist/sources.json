@@ -58,5 +58,89 @@
     "title": "Evaluation best practices",
     "url": "https://developers.openai.com/api/docs/guides/evaluation-best-practices",
     "supports": "Task-specific evaluation and continuous quality measurement."
+  },
+  {
+    "id": "ms-genai-course",
+    "title": "Generative AI for Beginners",
+    "url": "https://github.com/microsoft/Generative-AI-for-beginners",
+    "publisher": "Microsoft",
+    "type": "Course"
+  },
+  {
+    "id": "ms-ai-concepts",
+    "title": "Understand AI concepts",
+    "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+    "publisher": "Microsoft Learn",
+    "type": "Learning path"
+  },
+  {
+    "id": "google-genai-guide",
+    "title": "A beginner\u2019s guide to generative AI",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/beginners-guide",
+    "publisher": "Google Cloud",
+    "type": "Guide"
+  },
+  {
+    "id": "nist-genai-profile",
+    "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+    "url": "https://doi.org/10.6028/NIST.AI.600-1",
+    "publisher": "NIST",
+    "type": "Risk profile"
+  },
+  {
+    "id": "chatgpt-capabilities",
+    "title": "ChatGPT capabilities overview",
+    "url": "https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview",
+    "publisher": "OpenAI Help Center",
+    "type": "Product documentation"
+  },
+  {
+    "id": "chatgpt-projects",
+    "title": "Projects in ChatGPT",
+    "url": "https://help.openai.com/en/articles/10169521-projects-in-chatgpt",
+    "publisher": "OpenAI Help Center",
+    "type": "Product documentation"
+  },
+  {
+    "id": "chatgpt-data-controls",
+    "title": "Data Controls FAQ",
+    "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+    "publisher": "OpenAI Help Center",
+    "type": "Product documentation"
+  },
+  {
+    "id": "chatgpt-prompting",
+    "title": "Prompt engineering best practices for ChatGPT",
+    "url": "https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt",
+    "publisher": "OpenAI Help Center",
+    "type": "Guide"
+  },
+  {
+    "id": "msu-prompting",
+    "title": "Prompt Engineering Guide",
+    "url": "https://www.msudenver.edu/ai/prompt-engineering-guide/",
+    "publisher": "Metropolitan State University of Denver",
+    "type": "Guide"
+  },
+  {
+    "id": "anthropic-context-engineering",
+    "title": "Effective context engineering for AI agents",
+    "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "publisher": "Anthropic Engineering",
+    "type": "Engineering article"
+  },
+  {
+    "id": "anthropic-context-windows",
+    "title": "Context windows",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+    "publisher": "Anthropic Documentation",
+    "type": "Technical documentation"
+  },
+  {
+    "id": "ms-context-engineering",
+    "title": "Context engineering",
+    "url": "https://microsoft.github.io/ai-agents-for-beginners/12-context-engineering/",
+    "publisher": "Microsoft",
+    "type": "Learning module"
   }
 ]

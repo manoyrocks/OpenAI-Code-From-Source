@@ -2,7 +2,7 @@
 
 Design a host integration around clear tool contracts.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## A host integration is its own surface
 

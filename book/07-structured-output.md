@@ -2,7 +2,7 @@
 
 Validate structured results before accepting generated files.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## A schema is a starting point
 

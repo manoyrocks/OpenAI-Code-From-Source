@@ -2,7 +2,7 @@
 
 Turn documentation into a traceable engineering input.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## A source is an input, not an authority to execute
 

@@ -2,7 +2,7 @@
 
 Separate model context from durable product records.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## Three different lifetimes
 

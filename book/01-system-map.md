@@ -2,7 +2,7 @@
 
 Locate ChatGPT, Codex and the API in your architecture.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## Start with the user’s task
 

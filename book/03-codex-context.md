@@ -2,7 +2,7 @@
 
 Use AGENTS.md to make repository expectations explicit.
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-24
 
 ## Instructions belong near the work
 
