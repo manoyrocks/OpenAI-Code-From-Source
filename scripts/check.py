@@ -40,4 +40,13 @@ with zipfile.ZipFile(ROOT/'dist'/'downloads'/'openai-from-docs.zip') as archive:
     assert archive.testzip() is None
     assert not any('/.openai/' in n or '/.git/' in n for n in archive.namelist())
 assert len(pages)==len(data['chapters'])+7
+landing=(ROOT/'dist'/'introduction.html').read_text(encoding='utf8')
+app=(ROOT/'dist'/'app.js').read_text(encoding='utf8')
+theme_css=(ROOT/'dist'/'journey.css').read_text(encoding='utf8')
+assert landing.count('class="quest-node"')==4
+assert landing.count('data-complete-step')==0  # completion controls live on lesson pages
+assert all((ROOT/'dist'/(c['slug']+'.html')).read_text(encoding='utf8').count('data-complete-step')==1 for c in module['chapters'])
+assert all(f'value="{palette}"' in landing for palette in ['ocean','violet','ember','forest'])
+assert 'ofd-genai-101-progress' in app and '100 XP' in app and 'badgeNames' in app and "id=\"palette\"" in landing
+assert '@media(prefers-reduced-motion:reduce)' in theme_css and 'perspective:' in theme_css
 print(f'PASS: {len(pages)} pages, local references, chapter provenance, 2 template catalogs and portable ZIP.')

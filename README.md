@@ -1,6 +1,6 @@
 # OpenAI from Docs
 
-An independent public-documentation-based field guide to generative AI, ChatGPT, Codex and the OpenAI API. Includes a four-lesson GenAI 101 introduction, ten engineering chapters, three interactive labs, two downloadable repository starters and an engineering study of Claude Code from Source.
+An independent public-documentation-based field guide to generative AI, ChatGPT, Codex and the OpenAI API. Includes a four-lesson, XP-tracked GenAI 101 journey with earned badges, 3D card effects and four selectable color palettes; ten engineering chapters, three interactive labs, two downloadable repository starters and an engineering study of Claude Code from Source.
 
 ## Run and verify
 
@@ -15,7 +15,7 @@ node --test templates/responses/server.test.mjs templates/codex/site.test.mjs
 python -m http.server 4173 --bind 127.0.0.1 --directory dist
 ```
 
-Open http://127.0.0.1:4173. Chapter content is pre-rendered; search, theme, labs and export are progressive JavaScript features. Serve over HTTP rather than opening index.html as a local file because the exporter fetches its template catalog.
+Open http://127.0.0.1:4173. Chapter content is pre-rendered; search, persistent color palettes, dark mode, the XP-and-badge journey, labs and export are progressive JavaScript features. Journey progress and preferences stay in local browser storage. Serve over HTTP rather than opening index.html as a local file because the exporter fetches its template catalog.
 
 ## Repository map
 
@@ -37,7 +37,7 @@ Edit content.json or modules/introduction.json then rebuild. Edit shared present
 
 ## Hosting
 
-Publish dist/ on a static host. Relative asset and page URLs support a GitHub project subpath. The manual GitHub Pages workflow requires a GitHub repository with Pages configured for GitHub Actions. The source ZIP excludes the original private Sites identity; never reuse someone else’s hosting configuration.
+Publish dist/ on a static host. Relative asset and page URLs support a GitHub project subpath. The manual GitHub Pages workflow requires a GitHub repository with Pages configured for GitHub Actions. The source is published at https://github.com/manoyrocks/OpenAI-Code-From-Source. The source ZIP excludes the original private Sites identity; never reuse someone else’s hosting configuration.
 
 ## What works and what remains application-specific
 
